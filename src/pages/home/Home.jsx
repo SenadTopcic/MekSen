@@ -20,7 +20,7 @@ const Home = () => {
 				</div>
 			<div className="field">
 				<Intro />
-				<Button onClick={handlePlayNow} buttonLabel="Play now"/>
+				<Button btnClass="btn" onClick={handlePlayNow} buttonLabel="Play now"/>
 				<Footer	/>
 			</div>
 			</section>

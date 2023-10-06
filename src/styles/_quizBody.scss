@@ -1,48 +1,73 @@
 /* QuizBody.css */
 .quiz-container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #19471d6b;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .quiz-question {
-    padding: 20px;
-    background-color: #30a738b7;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  ul.quiz-options {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul.quiz-options li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 5px 0;
-    cursor: pointer;
-  }
-  
-  .navigation-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #19471d6b;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+.quiz-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style the answer buttons */
+.answer-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answer-btn.selected {
+  background-color: gold; /* Change color for selected answers */
+  color: white;
+}
+
+/* Style navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Style the Previous and Next buttons */
+.answer-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.answer-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.answer-btn:hover {
+  background-color: #0056b3;
+}
+
   
   
   
