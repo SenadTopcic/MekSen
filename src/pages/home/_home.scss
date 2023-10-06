@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
   
-    height: 60vh;
+    height: 50vh;
     width: 50%;
     
 }
@@ -81,6 +81,10 @@ body {
     border: solid 2px #0066cc;
 }
 
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 
 .auth-container{
     display: grid;

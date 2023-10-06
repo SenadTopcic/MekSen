@@ -1,22 +1,26 @@
 
 import React, { useEffect, useState } from "react";
 
-import imgSrc from "../../assets/img/tbll_logo.png";
-
-import questions from "../../data/questions.json";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-
+import QuizBody from "../../components/QuizBody";
 
 const QuizPage = () => {
   
   return (
-     <>
-        <section className="section-play">
+    <>
+      <section >
+        <div className="headerPart">
           <Header />
-          <Footer />
-        </section>
-     </>
+        </div>
+        <div className="bodyPart">
+          <QuizBody />
+        </div>
+        <div className="footerPart">
+         <Footer />
+        </div>
+      </section>
+    </>
   )
 };
 
