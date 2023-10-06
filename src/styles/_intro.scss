@@ -1,0 +1,29 @@
+
+
+
+@media (max-width: 768px) {
+  .intro-container {
+    width: 90%;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  .fade {
+    width: 100%;
+    min-height: 50vh;
+    top: -5px;
+    background-image: linear-gradient(0deg, transparent, black 95%);
+    z-index: 1;
+  }
+
+  .star-wars {
+    height: 800px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 150%;
+    perspective: 900px;
+    text-align: justify;
+  }
+}
+
+
